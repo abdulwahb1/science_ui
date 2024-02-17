@@ -1,33 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  min-height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --gradient_purple: linear-gradient(180deg, #514edd 0%, #3634a5 100%);
+}
+
+.turn_purple:hover {
+  background: var(--gradient_purple);
+  color: white;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .btn_purple_mobile {
+    @apply border bg-custom-violet shadow-sm text-white font-bold text-sm px-6 py-2 rounded-md;
+  }
+  .btn_white_mobile {
+    @apply border bg-white shadow-sm text-black font-bold text-sm px-6 py-2 rounded-md;
   }
 }
