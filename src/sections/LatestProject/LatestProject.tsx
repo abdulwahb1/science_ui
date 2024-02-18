@@ -3,19 +3,29 @@ import React from "react";
 import { ProjectCard } from "@/components";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Image from "next/image";
-import Link from "next/link";
+import "../../styles/carouselStyles.module.css";
 
 const LatestProject = () => {
   return (
     <section className="flex flex-col justify-center items-center">
       <div>
-        <p>Some of the Latest Projects on ScienceReach</p>
-        <p>Discover the latest from researchers and community organizations</p>
+        <p className="text-black text-center text-2xl font-extrabold">
+          Some of the Latest Projects <br /> on{" "}
+          <span className="text-custom-violet">ScienceReach</span>
+        </p>
+        <p className="text-black text-center text-sm font-normal mt-5">
+          Discover the latest from researchers and <br /> community
+          organizations
+        </p>
       </div>
 
-      <div className="flex flex-col justify-center items-center ">
-        <Carousel showThumbs={false}>
+      <div className="flex flex-col">
+        <Carousel
+          showArrows={false}
+          showStatus={false}
+          showThumbs={false}
+          className="max-w-xs"
+        >
           {PROJECT_LIST.map((project) => (
             <div key={project.id}>
               <ProjectCard

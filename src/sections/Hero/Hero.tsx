@@ -37,17 +37,17 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="px-4 relative">
-        <div className="rounded-b-lg w-[54px] h-[38px] bg-custom-violet opacity-50 absolute left-2 top-0"></div>
+      <div className=" px-2 relative">
+        <div className="rounded-b-lg w-[45px] h-[30px] bg-custom-violet opacity-50 absolute left-1 -top-1"></div>
         <div>
           <Image
             src="/section_1.png"
-            width={962}
+            width={4096}
             height={659}
             alt="section_1"
-            className="w-screen sm:hidden h-full mb-2"
+            className="w-85 h-full mb-2 rounded-l-xl"
           />
-          <div className="rounded-b-lg w-[87px] h-[70px] bg-custom-violet ml-auto absolute bottom-0 right-4 ">
+          <div className="rounded-b-lg w-[87px] h-[70px] bg-custom-violet ml-auto absolute bottom-0 right-2    ">
             <div className="text-white text-center text-xs px-2 py-1 font-medium">
               <span className="text-xl font-extrabold">70K+</span> Successful
               Projects

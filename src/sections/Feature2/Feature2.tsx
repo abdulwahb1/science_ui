@@ -18,12 +18,13 @@ const Feature2 = () => {
           your project’s significance to the community.
         </p>
       </div>
-      <div className="p-4">
+      <div className="px-6 py-4">
         <Image
           src="/section_2.png"
           width={874}
           height={753}
           alt="Feature 2 Image"
+          className="rounded-xl w-full h-full"
         />
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -39,7 +40,7 @@ const Feature2 = () => {
           ))}
         </div>
         <div className="my-4">
-          <Button variant="btn_purple_mobile">Get Started with SCP</Button>
+          <Button variant="btn_purple_mobile">Get Started with your SCP</Button>
         </div>
       </div>
     </section>

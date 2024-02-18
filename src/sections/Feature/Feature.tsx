@@ -15,8 +15,8 @@ const Feature = () => {
         </p>
       </div>
       <div className="flex flex-col justify-center items-center ">
-        <div className="z-20 flex w-full flex-col ">
-          <ul className="mt-5 grid gap-10 md:grid-cols-3 lg:mt-20 ">
+        <div className="z-20 flex w-full flex-col px-5">
+          <ul className="mt-5 grid gap-5 md:grid-cols-3 lg:mt-20 ">
             {FEATURES.map((feature) => (
               <FeatureCard
                 key={feature.title}

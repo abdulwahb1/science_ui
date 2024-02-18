@@ -4,18 +4,15 @@ import { Button } from "@/components";
 
 const CTA = () => {
   return (
-    <section className="flex flex-col justify-center items-center my-10 relative">
-      <div className="z-0 absolute inset-0">
-        <Image
-          src="/section_3.png"
-          width={379}
-          height={334}
-          alt="section_3"
-          className="w-full p-2"
-        />
-      </div>
-
-      <div className="z-10 flex flex-col justify-center items-center text-center my-10 p-2">
+    <section className="relative grid place-items-center my-10">
+      <Image
+        src="/section_3.png"
+        width={379}
+        height={334}
+        alt="section_3"
+        className="absolute z-0 w-full h-full object-cover rounded-md"
+      />
+      <div className="z-10 text-center p-4">
         <h2 className="text-white text-2xl font-bold">
           Are you a Community-Based Organization (CBO)?
         </h2>

@@ -32,6 +32,6 @@ body {
     @apply border bg-custom-violet shadow-sm text-white font-bold text-sm px-6 py-2 rounded-md;
   }
   .btn_white_mobile {
-    @apply border bg-white shadow-sm text-black font-bold text-sm px-6 py-2 rounded-md;
+    @apply border bg-white shadow-sm text-custom-violet font-bold text-sm px-6 py-2 rounded-md;
   }
 }
