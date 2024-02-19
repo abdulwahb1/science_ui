@@ -6,23 +6,24 @@ const Feature = () => {
   return (
     <section className="flex flex-col justify-center items-center my-11">
       <div className="flex flex-col justify-center items-center gap-x-2 gap-y-4">
-        <h2 className="text-black text-2xl font-extrabold">
+        <h2 className="text-black text-2xl font-extrabold md:text-6xl">
           We are <span className="text-custom-violet"> building </span>{" "}
           community
         </h2>
-        <p className="text-sm font-semibold">
+        <p className="text-sm font-semibold md:text-lg">
           By bringing research and communities closer, we…
         </p>
       </div>
       <div className="flex flex-col justify-center items-center ">
         <div className="z-20 flex w-full flex-col px-5">
-          <ul className="mt-5 grid gap-5 md:grid-cols-3 lg:mt-20 ">
+          <ul className="mt-5 grid gap-5 md:gap-0 md:grid-cols-3 md:mt-20 ">
             {FEATURES.map((feature) => (
               <FeatureCard
-                key={feature.title}
+                key={feature.id}
                 title={feature.title}
                 icon={feature.icon}
                 description={feature.description}
+                isActive={feature.id === 2}
               />
             ))}
           </ul>

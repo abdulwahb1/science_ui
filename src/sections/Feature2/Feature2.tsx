@@ -7,25 +7,27 @@ import { Button } from "@/components";
 const Feature2 = () => {
   return (
     <section className="flex flex-col justify-center items-center w-full">
-      <div className="flex flex-col p-4">
-        <h2 className="text-2xl font-extrabold  text-center my-2">
-          We are here to make your research project{" "}
-          <span className="text-custom-violet"> significant</span>
-        </h2>
-        <p className="text-center text-sm font-normal">
-          ScienceReach can help you integrate community knowledge into your
-          research and create a science communication plan that demonstrates
-          your project’s significance to the community.
-        </p>
-      </div>
-      <div className="px-6 py-4">
-        <Image
-          src="/section_2.png"
-          width={874}
-          height={753}
-          alt="Feature 2 Image"
-          className="rounded-xl w-full h-full"
-        />
+      <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col p-4">
+          <h2 className="text-2xl font-extrabold  text-center my-2">
+            We are here to make your research project{" "}
+            <span className="text-custom-violet"> significant</span>
+          </h2>
+          <p className="text-center text-sm font-normal">
+            ScienceReach can help you integrate community knowledge into your
+            research and create a science communication plan that demonstrates
+            your project’s significance to the community.
+          </p>
+        </div>
+        <div className="px-6 py-4">
+          <Image
+            src="/section_2.png"
+            width={874}
+            height={753}
+            alt="Feature 2 Image"
+            className="rounded-xl w-full h-full"
+          />
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center ">

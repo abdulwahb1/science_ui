@@ -14,21 +14,24 @@ export const NAVBAR_LINKS = [
 export const FEATURES = [
   {
     title: "Offer practical knowledge about communities",
-    icon: "/Icon1.svg",
+    icon: "/Icon1.png",
     description:
       "This information comes from NGOs, charities, etc, that directly work with people. Using ScienceReach, they share knowledge with researchers and policymakers.",
+    id: 1,
   },
   {
     title: "Provide access to opportunities and talents",
-    icon: "/Icon2.svg",
+    icon: "/Icon2.png",
     description:
       "When research is connected to community challenges and offers science communication activities, its significance is better demonstrated.",
+    id: 2,
   },
   {
     title: "Showcase research projects significance",
-    icon: "/Icon2.svg",
+    icon: "/Icon3.png",
     description:
       "When research is connected to community challenges and offers science communication activities, its significance is better demonstrated.",
+    id: 3,
   },
 ];
 
