@@ -28,12 +28,12 @@ const ProjectCard = ({
   tags,
 }: ProjectCard) => {
   return (
-    <div className="flex flex-col my-11">
-      <div className="w-full">
+    <div className="flex flex-col md:w-full my-11">
+      <div className="w-full ">
         <Image src={img} alt="picture" width={510} height={296} className="" />
       </div>
 
-      <p className="text-black text-lg font-extrabold my-5 capitalize text-left">
+      <p className="text-black text-lg font-extrabold my-5 capitalize text-left md:text-2xl">
         {title}
       </p>
       <div className="flex flex-col ">
@@ -73,15 +73,15 @@ const ProjectCard = ({
           <p className="text-sm text-black font-medium ">{seen}</p>
         </div>
         <div className="my-5 text-left">
-          <p className="text-sm text-black font-semibold ml-auto">
+          <p className="text-sm text-black font-semibold ml-auto md:text-lg">
             Project leads:{" "}
           </p>
-          <p className="text-sm text-black font-medium">{leads}</p>
+          <p className="text-sm text-black font-medium md:text-base">{leads}</p>
         </div>
         <div className="text-left">
           <Link
             href="/"
-            className="text-[0.6rem] text-black font-medium hover:text-blue-500"
+            className="text-xs text-black font-medium hover:text-blue-500 md:text-base"
           >
             {tags}
           </Link>

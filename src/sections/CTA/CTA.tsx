@@ -13,17 +13,19 @@ const CTA = () => {
         className="absolute z-0 w-full h-full object-cover rounded-md"
       />
       <div className="z-10 text-center p-4">
-        <h2 className="text-white text-2xl font-bold">
+        <h2 className="text-white text-2xl font-bold lg:text-3xl">
           Are you a Community-Based Organization (CBO)?
         </h2>
-        <p className="text-white text-sm font-normal my-7">
+        <p className="text-white text-sm font-normal my-7 lg:text-base">
           ScienceReach can help you publish about the pressing challenges in
           your community. Researchers can then use this information to do
           research that truly makes an impact. CBOs are eligible to receive
           regular compensation from ScienceReach based on the usage of their
           publications.
         </p>
-        <Button variant="btn_white_mobile">Get Started with SCP</Button>
+        <Button variant="btn_white_mobile lg:w-80 lg:h-12 lg:text-xl">
+          Get Started with SCP
+        </Button>
       </div>
     </section>
   );

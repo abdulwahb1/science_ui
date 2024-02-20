@@ -9,22 +9,22 @@ const LatestProject = () => {
   return (
     <section className="flex flex-col justify-center items-center">
       <div>
-        <p className="text-black text-center text-2xl font-extrabold">
+        <p className="text-black text-center text-2xl font-extrabold md:text-4xl">
           Some of the Latest Projects <br /> on{" "}
           <span className="text-custom-violet">ScienceReach</span>
         </p>
-        <p className="text-black text-center text-sm font-normal mt-5">
+        <p className="text-black text-center text-sm font-normal mt-5 md:text-lg">
           Discover the latest from researchers and <br /> community
           organizations
         </p>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-screen justify-center items-center">
         <Carousel
           showArrows={false}
           showStatus={false}
           showThumbs={false}
-          className="max-w-xs"
+          className="w-xs md:w-2/4"
         >
           {PROJECT_LIST.map((project) => (
             <div key={project.id}>
