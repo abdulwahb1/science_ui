@@ -17,7 +17,7 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} position="static" maxWidth="full">
       <NavbarContent justify="start">
         <NavbarBrand>
           <Image
@@ -49,7 +49,7 @@ export default function Nav() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button variant="btn_white_mobile">
+          <Button variant="btn_white_mobile ">
             {" "}
             <Link href="#" className="text-black">
               Login

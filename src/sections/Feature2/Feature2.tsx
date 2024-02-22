@@ -7,13 +7,13 @@ import { Button } from "@/components";
 const Feature2 = () => {
   return (
     <section className="flex flex-col justify-center items-center w-full">
-      <div className="flex flex-col xl:flex-row">
-        <div className="flex flex-col p-4">
+      <div className="flex flex-col xl:flex-row 2xl:gap-x-28">
+        <div className="flex flex-col p-4 2xl:px-6 ">
           <h2 className="text-2xl font-extrabold md:text-3xl text-center my-2 lg:text-4xl lg:text-left">
             We are here to make your research project{" "}
             <span className="text-custom-violet"> significant</span>
           </h2>
-          <p className="text-center text-sm font-normal lg:my-10 md:text-base lg:text-left lg:text-lg">
+          <p className="text-center text-sm font-normal lg:my-10 md:text-base lg:text-left lg:text-lg max-w-[700px]">
             ScienceReach can help you integrate community knowledge into your
             research and create a science communication plan that demonstrates
             your project’s significance to the community.
@@ -31,13 +31,13 @@ const Feature2 = () => {
               ))}
             </div>
             <div className="my-4">
-              <Button variant="btn_purple_mobile ">
+              <Button variant="btn_purple_mobile 2xl:w-64 2xl:h-12 2xl:text-base">
                 Get Started with your SCP
               </Button>
             </div>
           </div>
         </div>
-        <div className="px-6 py-4 flex justify-center items-center">
+        <div className="px-6 flex justify-center items-center 2xl:px-0">
           <Image
             src="/section_2.png"
             width={874}

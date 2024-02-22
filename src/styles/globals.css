@@ -22,7 +22,7 @@ body {
   --gradient_purple: linear-gradient(180deg, #514edd 0%, #3634a5 100%);
 }
 
-.turn_purple:hover {
+.turn_purple {
   background: var(--gradient_purple);
   color: white;
 }

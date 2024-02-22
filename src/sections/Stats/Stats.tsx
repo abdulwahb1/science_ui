@@ -2,15 +2,15 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col bg-[#F6F6F6] w-full justify-center items-center py-6">
       <div className=" flex flex-col justify-center items-center ">
         <h2 className="text-2xl font-extrabold text-center md:text-4xl">
           Project priorities <br /> delivered{" "}
           <span className="text-custom-violet"> best</span>
         </h2>
       </div>
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex flex-row gap-10 my-5 md:my-10">
+      <div className="flex flex-col lg:flex-row ">
+        <div className="flex flex-row gap-10 my-5 md:my-10 2xl:gap-x-20">
           <div className="flex flex-col">
             <div className="text-6xl text-custom-violet font-black md:text-8xl lg:text-6xl">
               50K
@@ -46,7 +46,7 @@ const Stats = () => {
             </p>
           </div>
         </div>
-        <div className="lg:mt-12 lg:mx-6 hidden lg:flex">
+        <div className="lg:mt-12 lg:mx-6 hidden lg:flex 2xl:mx-20">
           <svg
             width="2"
             height="65"
@@ -64,7 +64,7 @@ const Stats = () => {
             />
           </svg>
         </div>
-        <div className="flex flex-row gap-10 my-2 ml-2 lg:my-10">
+        <div className="flex flex-row gap-10 my-2 ml-2 lg:my-10 2xl:gap-x-20">
           <div className="flex flex-col">
             <div className="text-6xl text-custom-violet font-black md:text-8xl lg:text-6xl">
               30K

@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <section className="flex flex-col items-center justify-between w-full">
       <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col items-center justify-center w-full px-5 py-5 ">
-          <h1 className="text-3xl font-extrabold md:text-left text-center text-black py-5 lg:text-6xl md:text-3xl">
+        <div className="flex flex-col items-center justify-center w-full px-5 py-5 2xl:w-2/4 2xl:px-0">
+          <h1 className="text-3xl font-extrabold md:text-left text-center text-black py-5 lg:text-6xl md:text-3xl 2xl:text-7xl">
             Our <span className="text-custom-violet"> mission </span> is to
             bring <span className="text-custom-violet"> research </span>and
             communities closer
@@ -39,20 +39,30 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className=" px-2 md:px-0 relative md:my-20 lg:w-3/4 lg:py-10">
-          <div className="rounded-b-lg w-11 h-8 bg-custom-violet opacity-50 absolute left-1 -top-1 lg:top-7 lg:w-13 lg:h-8 lg:-left-2"></div>
+        <div className=" px-2 md:px-0 relative md:my-20 lg:w-2/4 lg:py-10">
+          <div className="rounded-b-lg w-11 h-8 bg-custom-violet opacity-50 absolute left-1 -top-1 lg:top-7 lg:w-13 lg:h-8 lg:-left-2 xl:left-6 xl:top-7 2xl:w-36 2xl:h-24 2xl:-left-20"></div>
           <div>
             <Image
               src="/section_1.png"
               width={4096}
               height={659}
               alt="section_1"
-              className="h-full md:h-80 mb-2 rounded-l-xl md:w-[50rem] object-contain"
+              className="h-full md:h-80 mb-2 rounded-l-xl md:w-[50rem] object-contain 2xl:hidden"
             />
-            <div className="rounded-b-lg w-24 h-16 bg-custom-violet ml-auto absolute bottom-0 right-2 md:w-32 md:h-24 md:right-0">
-              <div className="text-white text-center text-xs md:text-lg px-2 py-1 font-medium">
-                <span className="text-xl font-extrabold lg:text-2xl">70K+</span>{" "}
-                <br className="hidden md:block" /> Successful Projects
+            <Image
+              src="/desktop_section_1.png"
+              width={961}
+              height={659}
+              alt="section_1"
+              className="w-full h-full hidden 2xl:block"
+            />
+
+            <div className="rounded-b-lg w-24 h-16 bg-custom-violet ml-auto absolute bottom-0 right-2 md:w-32 md:h-24 md:right-0 xl:right-10 xl:bottom-4 2xl:w-44 2xl:h-36">
+              <div className="text-white text-xs md:text-lg font-medium flex flex-col justify-center items-center h-full">
+                <span className="text-xl font-extrabold lg:text-2xl xl:text-xl 2xl:text-4xl">
+                  70K+
+                </span>
+                <p className="text-sm 2xl:text-lg">Successful Projects</p>
               </div>
             </div>
           </div>
